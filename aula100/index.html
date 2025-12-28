@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu HTML</title>
+
+  <style>
+    h1 {
+      background: red;
+    }
+    h1 {
+      background: blue; /*ficará com a cor azul pq foi o último código */
+    }
+    p {
+      background: green;
+    }
+    
+  /* #cabecalho-dois{
+    background: purple;
+  } */
+
+  .fundo-vermelho {
+    background: brown;
+  }
+
+  .bold {
+    color: yellow;
+  }
+  </style>
+</head>
+<body>
+  <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">
+    Vai vir aqui dentro
+  </h1>
+  <h1 id="cabecalho-dois" class="fundo-vermelho">
+    Entendendo a composição do HTML
+  </h1>
+  <p>Seguindo com os <b class="bold">estudos</b>.</p>
+  <p>Seguindo com os <b class="bold">estudos</b>.</p>
+  <p>Seguindo com os <b class="bold">estudos</b>.</p>
+  <p>Seguindo com os <b class="bold">estudos</b>.</p>
+  <p>Seguindo com os <b class="bold">estudos</b>.</p>
+    
+</body>
+</html>
+
+<!-- não pode existir dois ou mais 'id' com o mesmo nome -->
+<!-- pode existir dois ou mais 'class' com o mesmo nome -->
+<!-- um elemento pode ter várias 'class' -->
+<!-- no caso do css para o 'id' ser identificado temos que usar '#' -->
+<!-- tag 'b' significa-> colocar em negrito -->
+<!-- usando o ponto '.' no style, eu selecione toda a class -->
