@@ -6,7 +6,10 @@
   <title>Aprendendo HTML</title>
 
   <style>
-
+    .azul{
+      font-size: 24px;
+      color: blue;
+    }
   </style>
 
 </head>
@@ -20,19 +23,38 @@
     <b>Lorem</b>, <strong>ipsum dolor</strong> sit amet consectetur 
     adipisicing elit. <i>Illum, minus tempore voluptatibus</i> eos quia corporis 
     obcaecati corrupti <em>facilis possimus quasi in nisi sapiente</em> quidem 
-    atque pariatur facere quam vitae ullam.
+    atque<span class="azul"><b>pariatur facere quam vitae ullam.</b></span>
 
     <img src="teste.jfif" alt="descrever a imagem">
   </p>
 
   <p>
-    <del>vermelho</del> <ins>azul</ins> é a cor do <s>oceano</s>, cor céu, minha cor preditela!
+    <del>vermelho</del> <ins>azul</ins> é a cor do <s>oceano</s>, cor céu, minha cor predileta!
   </p>
 
   <p>
   2<sup>3</sup> ao cubo é 8. A fórmula da água é H<sub>2</sub>O.
   </p>
 
+  <hr>
+
+  <blockquote>
+    Aqui sim eu estou fazendo um bloco de citação.
+  </blockquote>
+
+  <pre><code>let soma = 0;
+
+inputMais.forEach((input) => {
+  const valor = input.value;
+  const numero = Number(valor);
+
+  if (numero) {
+    soma += numero;
+  }
+
+  console.log(soma);
+});
+  </code></pre>
 </body>
 </html>
 
@@ -56,7 +78,24 @@ A tag 'ins' indica um texto que foi inserido ou adicionado e aparece sublinhado.
 Elas são usadas para mostrar alterações no documento.
 A tag 's' é apenas para tachar, não tem valor semântico.
 
+A tag 'hr' (Horizontal Rule) cria uma linha horizontal na tela. 
+Ela serve para separar visualmente conteúdos ou indicar uma mudança 
+de assunto entre parágrafos. É uma tag vazia, ou seja, não tem fechamento.
+
 A tag 'sup' o texto fica acima da linha, usado para expoentes (2^3)
 A tag 'sub' o texto fica abaixo, usado para fórmulas quimicas. (H₂O)
+
+A tag 'blockquote' é usada para indicar que aquele bloco de texto 
+é uma citação vinda de outra fonte, mantendo as regras  ABNT.
+
+A tag 'pre' (Preformatted Text) mantém a formatação original, 
+respeitando todos os espaços e quebras de linha que você der.
+A tag 'code' define que o texto é um código de programação. Usamos as 
+duas juntas para exibir blocos de códigos perfeitamente formatados na tela.
+
+A tag 'div' é um bloco para agrupar grandes áreas e quebra a linha. 
+A tag 'span' é usada para pequenos trechos na mesma linha e 
+não quebra o texto. servindo apenas para agrupar e estilizar 
+pequenos trechos de conteúdo dentro de outros elementos.
  -->
 
