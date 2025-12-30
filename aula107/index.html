@@ -12,7 +12,7 @@
 
     table{
       border-collapse: collapse;
-      width: 100%;
+      width: 800px;
     }
 
     table td, table th {
@@ -27,40 +27,62 @@
       font-style: italic;
       font-size: 14px;
       margin: 5px 0;
+    }
 
+    tfoot td, table th {
+      background: #ddd;
+    }
+
+    tfoot td {
+      font-style: italic;
+    }
+
+    .responsive-table {
+      max-width: 100%;
+      overflow-x: auto;
     }
   </style>
 </head>
+
 <body>
   <p>Estrutura de lista "table" em HTML5</p>
 
-  <table>
-    <caption>Descrição da tabela HTML5</caption>
-    <thead>
-      <tr>
-        <th>Título 1</th>
-        <th>Título 2</th>
-        <th>Título 3</th>
-      </tr>
-    </thead>
+  <div class="responsive-table">
+    <table>
+      <caption>Descrição da tabela HTML5</caption>
+      <thead>
+        <tr>
+          <th>Título 1</th>
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-      <tr>
-        <td>Corpo 1</td>
-        <td>Corpo 2</td>
-        <td>Corpo 3</td>
-      </tr>
-    </tbody>
-  </table>
+      <tbody>
+        <tr>
+          <td colspan="2" row>Praticando</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2"></td>
+          <td>Total: <br>
+            R$ 555</td>        
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </body>
 </html>
