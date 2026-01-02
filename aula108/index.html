@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preenchedo Formulário</title>
+  <title>Curso HTML/CSS</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label {
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
-  
+
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <p>Meu formulário em HTML5</p>
+    <p>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Seu nome">
+    </p>
+
+    <p>
+      <label for="dev1">Sou um desenveloper junior:</label>
+      <input type="checkbox" id="dev1" name="dev1" value="sim" checked><br>
+
+      <label for="dev2">Sou um desenveloper pleno:</label>
+      <input type="checkbox" id="dev2" name="dev2" value="sim"><br>
+
+      <label for="dev3">Sou um desenveloper sênior:</label>
+      <input type="checkbox" id="dev3" name="dev3" value="sim"><br>
+    </p>
+
+    <p>
+      Gênero:<br>
+      <label for="feminino">feminino</label>
+      <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+      <label for="masculino">masculino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino" checked><br>
+
+      <label for="outro">outro</label>
+      <input type="radio" id="outro" name="genero" value="outro"><br>
+    </p>
+
+    <p>
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </p>
+
+  </form>
+
 </body>
+
 </html>
+
+<!-- 
+É estritamente aninhar um formulário em outro
+  -->
