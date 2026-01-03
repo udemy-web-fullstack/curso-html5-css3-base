@@ -1,12 +1,48 @@
 * {
-  border: 1px solid blue;
+  margin: 0;
+  padding: 0;
 }
-  
-  
-  
-  
-  /* .caixa {
-    background: blue;
-    height: 120px;
-    width: 120px;
-  } */
+
+
+/*  **********parte 4 com HTML**********
+div {
+  color: initial;
+  margin-left: 20px;
+}
+
+.main-content h2.heading {
+  font-style: italic;
+  color: blueviolet;
+}
+
+.pai .filha .neta {
+  color: blue;
+} */
+
+
+/* **********parte 3 com HTML**********
+.select-color {
+  color: blue;
+}
+
+.main-content h2.heading {
+  font-style: italic;
+  color: blueviolet;
+} */
+
+
+/* **********parte 2 com HTML**********
+.select-color {
+  color: blue;
+} */
+
+/* **********parte 1 com HTML**********
+h1, p {
+  color: purple
+}
+
+body div section p,
+body div section h1 {
+  color: #0f0
+} */
+
