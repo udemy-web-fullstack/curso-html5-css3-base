@@ -1,5 +1,12 @@
-  .caixa {
+* {
+  border: 1px solid blue;
+}
+  
+  
+  
+  
+  /* .caixa {
     background: blue;
     height: 120px;
     width: 120px;
-  }
+  } */
