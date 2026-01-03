@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[meu-atributo] {
+  color: blue;
+}
+
+/*  **********parte 5 com HTML********** 
+.pai h1+p {  depois do h1 mudará a cor do primeiro ''p'' 
+  color: blue;
+}
+
+.pai p+h1 { depois do p mudará a cor do primeiro ''h'' que aparecer
+  color: blueviolet;
+}
+*/
+
+
+/*  **********parte 4 com HTML**********
+div {
+  color: initial;
+  margin-left: 20px;
+}
+
+.main-content h2.heading {
+  font-style: italic;
+  color: blueviolet;
+}
+
+.pai .filha .neta {
+  color: blue;
+} */
+
+
+/* **********parte 3 com HTML**********
+.select-color {
+  color: blue;
+}
+
+.main-content h2.heading {
+  font-style: italic;
+  color: blueviolet;
+} */
+
+
+/* **********parte 2 com HTML**********
+.select-color {
+  color: blue;
+} */
+
+/* **********parte 1 com HTML**********
+h1, p {
+  color: purple
+}
+
+body div section p,
+body div section h1 {
+  color: #0f0
+} */
+
