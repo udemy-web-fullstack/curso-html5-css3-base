@@ -5,3 +5,27 @@
 .heading:hover {
   background: blue;
 }
+
+a {
+ color: darkorange;   /*todos os links*/
+}
+
+a:link {
+  color: deeppink;   /*links nunca visitados*/
+}
+
+a:visited {
+  color: firebrick;   /*links que já foram visitados*/
+}
+
+a:hover {
+  background-color: darkslategray; /*muda a cor dos links passando o mouse*/
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: darkslateblue; /*muda a cor dos links clicando com o mouse*/
+  color: white;
+  text-decoration: none;
+}
