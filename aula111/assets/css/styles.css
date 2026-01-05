@@ -1,0 +1,7 @@
+.heading {
+  transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+  background: blue;
+}
