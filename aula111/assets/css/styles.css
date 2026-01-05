@@ -31,7 +31,11 @@ a:active {
 }
 
 input:checked + p {
-  background: blue;
+  background: yellow;
+}
+
+input:not(checked) + p {
+  background: grey;
 }
 
 .pai .lista li:first-child {
@@ -46,6 +50,9 @@ input:required {
   background: blueviolet;
 }
 
+p:not(.meio) {
+  color: blue;
+}
 
 
 /* metade da aula foi sobre seletores pseudo-classes, acima outra parte da aula
