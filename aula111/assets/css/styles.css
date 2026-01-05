@@ -29,3 +29,33 @@ a:active {
   color: white;
   text-decoration: none;
 }
+
+input:checked + p {
+  background: blue;
+}
+
+.pai .lista li:first-child {
+  background: blue;
+}
+
+.pai .lista li:last-child {
+  background: green;
+}
+
+input:required {
+  background: blueviolet;
+}
+
+
+
+/* metade da aula foi sobre seletores pseudo-classes, acima outra parte da aula
+  input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: 1px solid black;
+}
+
+input:enabled {
+  background: rebeccapurple;
+  cursor: not-allowed;
+} */
