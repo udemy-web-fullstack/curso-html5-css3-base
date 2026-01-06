@@ -1,14 +1,28 @@
+/* html, body {
+  height: 100%;
+} */
+
 .Box-Model {
+  box-sizing: border-box;
   background: yellow;
   color: blue;
-  width: 190px;
-  height: 190px;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  max-width: 500px;
+  min-height: 0;
+  min-width: 0;
   overflow: auto;
+  margin: 0 auto 50px auto;
+  padding: 10px 5px 15px 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightcoral;
 }
 
 /* propriedades que controlam o tamanho do conteúdo no Box-Model.
-max-height: 100%
-max-width: 100%
-min-height: 0
-min-width: 0
+max-height: 100%;
+max-width: 100%;
+min-height: 0;
+min-width: 0;
 */
