@@ -1,15 +1,14 @@
-#CSS3 {
-  font-family: sans-serif;
+.Box-Model {
+  background: yellow;
   color: blue;
-  font-size: 20px;
+  width: 190px;
+  height: 190px;
+  overflow: auto;
 }
 
-p {
-  font-size: initial;
-}
-
-
-/* body {
-  font-family: sans-serif;
-  color: blue;
-} */
+/* propriedades que controlam o tamanho do conteúdo no Box-Model.
+max-height: 100%
+max-width: 100%
+min-height: 0
+min-width: 0
+*/
