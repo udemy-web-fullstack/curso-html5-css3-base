@@ -1,0 +1,19 @@
+body#b.bclass p#p.p { /*222*/
+  background: purple; 
+}
+
+#p { /*100*/
+  background: blue; 
+}
+
+.p { /*010*/
+  background: yellow;
+}
+
+#p.p { /*110*/
+  background: green;
+}
+
+p#p.p { /*111*/
+  background: goldenrod;
+}
