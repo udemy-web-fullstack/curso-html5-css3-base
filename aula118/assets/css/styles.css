@@ -1,0 +1,19 @@
+p {
+  font-size: 20px;
+  /* font-style: italic;
+  font-weight: bold;
+  direction: rtl;
+  letter-spacing: 2px;
+  word-spacing: 15px;
+  line-height: 25px;
+  background-color: aquamarine;
+  text-decoration: underline; */
+  text-align: left;
+  text-indent: 40px;
+  text-shadow: -2px -1px 1px violet;
+  /* text-transform: lowercase; */
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
+  color: blue;
+
+}
