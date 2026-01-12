@@ -1,10 +1,59 @@
 * {
   margin: 0;
-  padding: 0;
+}
+
+ul {
+  height: 100px;
+  overflow-y: auto;
+}
+
+ul li.sticky {
+  position: sticky;
+  background: gray;
+  top: 0;
 }
 
 
-/* Posicionamentos: static, relative e absolute.
+/* Posicionamentos: static, relative, absolute e fixed.
+.pai {
+  height: 300vh;
+}
+
+.filha1, .filha2, .filha3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 255, 1);
+  margin: 10px;
+  position: static;
+}
+
+.filha2 {
+  background: greenyellow;
+  position: fixed;
+  top: 30%;
+  right: 0;
+  z-index: 1;
+}
+
+.filha1 {  
+}
+
+.filha3 {
+  background: red;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.teste {
+  position: absolute;
+  font-size: 50px;
+  background: #fff;
+  right: 0px;
+  bottom: 0;
+}
+
+
 .pai {
   height: 300vh;
 }
