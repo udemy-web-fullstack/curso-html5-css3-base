@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -61,6 +65,19 @@ body {
 
 .menu ul li a:hover {
   background: rgb(151, 239, 151);
+}
+
+.full-page {
+  max-width: 100%;
+  padding-top: 73px;
+  height: 100vh;
+  background: turquoise;
+}
+
+.full-page-content {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 @media all and (max-width: 568px) {
