@@ -32,20 +32,33 @@ body {
 }
 
 .grid .col-content {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 255, 0.8);
-  width: 100px;
-  height: 100px;
-/*border-top-left-radius: 15px;
-  border-radius: 20px 0 0 0;
-  border-top-right-radius: 15px;
-  border-radius: 20px 20px 0 0;
-  border-bottom-right-radius: 15px;
-  border-radius: 20px 20px 20px 0;
-  border-Bottom-Left-radius: 15px;
-  border-radius: 20px 20px 20px 20px; */
-  border-radius: 50%; /*criando um círculo*/
+
+  /* box-shadow: 0 0 15px 0 green; - pouco brilho nas 4 bordas ao fundo */
+  /* box-shadow: 0 0 15px 5px green; -> muito brilho nas 4 bordas ao fundo */
+  /* box-shadow: 5px 5px 5px green; -> brilho nas bordas ao fundo direta e abaixo */
+  /* box-shadow: inset 5px 5px 5px green; inserir brilho parte de dentro esquerda e acima */
+  box-shadow: inset 5px 5px 5px green, 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+  /* box-shadow: 5px 5px 0 0 goldenrod; -> sombra direta baixo */
+  /* box-shadow: -5px 5px 0 0 goldenrod; -> sombra esquerda baixo  */
+  /* box-shadow: 5px -5px 0 0 goldenrod; -> sombra direta acima  */
+  /* box-shadow: -5px -5px 0 0 goldenrod; -> sombra esquerda acima */
+
+  /*width: 100px;
+  height: 100px; */
+  /* border-top-left-radius: 15px; -> arredonda esquerda acima */
+  /* border-radius: 30px 0 0 0; -> arredonda esquerda acima */
+  /* border-top-right-radius: 15px; -> arredonda direita acima  */
+  /* border-radius: 0 30px 0 0 -> arredonda direita acima; */
+  /* border-bottom-right-radius: 15px; -> arredonda direita abaixo; */
+  /* border-radius: 0 0 30px 0; -> arredonda direita abaixo; */
+  /* border-Bottom-Left-radius: 15px; -> arredonda esquerda abaixo*/
+  /* border-radius: 0 0 0 30px; -> arredonda esquerda abaixo*/
+  /* border-radius: 50px; -> arredonda todas as pontas */
+  /* border-radius: 50%; -> criando um círculo */
 }
 
 .menu {
