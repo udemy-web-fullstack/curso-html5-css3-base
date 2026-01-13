@@ -1,11 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-.grid {
-  padding: 15px;
 }
 
 .grid::after {
@@ -15,7 +10,6 @@
 }
 
 .grid .col {
-  width: 33.33%;
   height: 300px;
   float: left;
   padding: 15px;
@@ -26,3 +20,29 @@
   height: 100%;
   background: rgba(0, 0, 255, 0.8);
 }
+
+@media all and (max-width: 568px) {
+  .grid .col {
+    width: 100%;
+  }
+}
+
+@media all and  (min-width: 569px) and (max-width: 768px) {
+  .grid .col {
+    width: 50%;
+  }
+}
+
+@media all and  (min-width: 769px) and (max-width: 1200px) {
+  .grid .col {
+    width: 33.33%;
+  }
+}
+
+@media all and  (min-width: 1200px) {
+  .grid .col {
+    width: 25%;
+  }
+}
+
+
