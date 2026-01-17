@@ -6,9 +6,8 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background: rgb(137, 242, 137);
   height: 500px;
 }
@@ -17,11 +16,4 @@
   color: #fff;
   background: blue;
   margin: 10px;
-  /* width: 100%; */
-}
-
-.flex-item:nth-child(3) {
-  font-size: 40px;
-}
-
 }
