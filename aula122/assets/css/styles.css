@@ -9,18 +9,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: yellow;
+  background: rgb(137, 242, 137);
   height: 500px;
-  /* gap: 30px; */
 }
 
 .flex-item {
   color: #fff;
-  /* width: 100%; */
   background: blue;
   margin: 10px;
+  /* width: 100%; */
 }
 
 .flex-item:nth-child(3) {
   font-size: 40px;
+}
+
 }
