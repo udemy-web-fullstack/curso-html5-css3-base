@@ -4,128 +4,37 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: sans-serif;
+  font: sans-serif;
+  font-size: 40px;
 }
 
 .grid {
   max-width: 1200px;
-  padding: 15px;
   margin: 0 auto;
-  padding-top: 73px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr 2fr); */
+  gap: 30px;
 }
 
-.grid::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid .col {
-  height: 300px;
-  float: left;
-  padding: 15px;
-}
-
-.grid .col-content {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 255, 0.8);
-
-  /* box-shadow: 0 0 15px 0 green; - pouco brilho nas 4 bordas ao fundo */
-  /* box-shadow: 0 0 15px 5px green; -> muito brilho nas 4 bordas ao fundo */
-  /* box-shadow: 5px 5px 5px green; -> brilho nas bordas ao fundo direta e abaixo */
-  /* box-shadow: inset 5px 5px 5px green; inserir brilho parte de dentro esquerda e acima */
-  box-shadow: inset 5px 5px 5px green, 5px 5px 5px rgba(0, 0, 0, 0.5);
-
-  /* box-shadow: 5px 5px 0 0 goldenrod; -> sombra direta baixo */
-  /* box-shadow: -5px 5px 0 0 goldenrod; -> sombra esquerda baixo  */
-  /* box-shadow: 5px -5px 0 0 goldenrod; -> sombra direta acima  */
-  /* box-shadow: -5px -5px 0 0 goldenrod; -> sombra esquerda acima */
-
-  /*width: 100px;
-  height: 100px; */
-  /* border-top-left-radius: 15px; -> arredonda esquerda acima */
-  /* border-radius: 30px 0 0 0; -> arredonda esquerda acima */
-  /* border-top-right-radius: 15px; -> arredonda direita acima  */
-  /* border-radius: 0 30px 0 0 -> arredonda direita acima; */
-  /* border-bottom-right-radius: 15px; -> arredonda direita abaixo; */
-  /* border-radius: 0 0 30px 0; -> arredonda direita abaixo; */
-  /* border-Bottom-Left-radius: 15px; -> arredonda esquerda abaixo*/
-  /* border-radius: 0 0 0 30px; -> arredonda esquerda abaixo*/
-  /* border-radius: 50px; -> arredonda todas as pontas */
-  /* border-radius: 50%; -> criando um círculo */
-}
-
-.menu {
-  width: 100%;
-  position: fixed;
-  background-color: greenyellow;
-}
-
-.menu ul {
-  list-style: none;
-  display: block;
-  max-width: 1200px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
-.menu ul li {
-  float: left;
-}
-
-.menu ul li a {
-  display: block;
-  color: #000;
-  padding: 20px;
-  text-decoration: none;
-  transition: all 300ms ease-in-out;
-}
-
-.menu ul li a:hover {
-  background: rgb(151, 239, 151);
-}
-
-.full-page {
-  max-width: 100%;
-  padding-top: 73px;
-  height: 100vh;
+.grid div {
   background: turquoise;
+  min-height: 100px;
 }
 
-.full-page-content {
-  max-width: 1200px;
-  padding: 0 30px;
-  margin: 0 auto;
+.grid div:nth-child(5) {
+  background: blueviolet;
+  grid-row: span 1;
+  grid-column: span 2;
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 6; */
 }
 
-@media all and (max-width: 568px) {
-  .grid .col {
-    width: 100%;
-  }
-}
-
-@media all and  (min-width: 569px) and (max-width: 768px) {
-  .grid .col {
-    width: 50%;
-  }
-}
-
-@media all and  (min-width: 769px) and (max-width: 1200px) {
-  .grid .col {
-    width: 33.33%;
-  }
-}
-
-@media all and  (min-width: 1200px) {
-  .grid .col {
-    width: 25%;
-  }
-}
-
+@media (max-width: 768px) {
+  .grid div:nth-child(5) {
+  grid-column: span 1;
+}}
 
