@@ -18,20 +18,23 @@
 </head>
 
 <body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <h1>
+      <h1 onclick="getElementById('close-menu').checked = false;">
         <a href="#home">LOGO</a>
       </h1>
 
       <nav>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li><a href="#intro">intro</a></li>
           <li><a href="#grid-one">grid-one</a></li>
           <li><a href="#gallery">gallery</a></li>
           <li><a href="#grid-two">grid-two</a></li>
           <li><a href="#pricing">pricing</a></li>
-          <li><a href="contact">contact</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -204,6 +207,8 @@
             <tr>
               <td></td>
               <td></td>
+              <td></td>
+              <td></td>
               <td>Site em Teste</td>
             </tr>
           </tfoot>
@@ -212,7 +217,7 @@
     </div>
   </section>
 
-  <section id="contact" class=" intro main-bg section">
+  <section id="contact" class="intro main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
         <h2>JANEIRO DE 2026: O NASCIMENTO DE UM FULL STACK</h2>
@@ -265,6 +270,7 @@
     Desenvolvido com muito <span class="heart">❤</span> por Magno V Gomes</a></p>
   </footer>
 
+  <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
