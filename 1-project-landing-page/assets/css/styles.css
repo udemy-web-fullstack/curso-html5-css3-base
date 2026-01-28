@@ -199,7 +199,7 @@
   .gallery-img {
     width: 100%;
     max-width: 100%;
-    max-height: 100%; 
+    max-height: 100%;
   }
 
   .gallery-img img {
@@ -213,6 +213,7 @@
   .menu {
     bottom: 0;
     text-align: center;
+    display: none;
   }
 
   .menu-content, .menu-content ul {
@@ -224,36 +225,42 @@
     height: 100vh;
   }
 
-  .menu {
-    display: none;
+  h1 {
+    font-size: 3.2rem;
   }
 
-  .close-menu-label::after {
-    content: '☰';
-    position: fixed;
-    z-index: 2;
-    top: 2rem;
-    right: 2rem;
-    background: var(--primary-color);
-    color: var(--white-color);
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    padding: 0.5rem;
-    cursor: pointer;
+  h2 {
+    font-size: 2.8rem;
   }
 
-  .close-menu:checked~.menu {
-    display: block;
+  h3 {
+    font-size: 2.4rem;
   }
 
-  .close-menu:checked~.close-menu-label::after {
-    content: '×';
+  h4 {
+    font-size: 2rem;
   }
 
-  .menu-spacing {
-    display: none;
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text-content h2 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, a {
+    word-break: break-word;
   }
 }
